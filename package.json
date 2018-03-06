@@ -5,6 +5,10 @@
   "author": "Tnarita0000 <naritatakuya0000@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "./bin/wat2wasm src/app.wat -o public/app.wasm"
+    "build": "./bin/wat2wasm src/app.wat -o public/app.wasm",
+    "run": "http-server"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
   }
 }

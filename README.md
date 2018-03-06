@@ -11,4 +11,33 @@ Run server
 yarn run
 ```
 
-access to http://localhost:8080
+open http://localhost:8080
+
+## Directory structure overview 
+```
+.
+├── README.md
+├── bin  <----------------- Emscripten tools bin dir
+│   ├── spectest-interp
+│   ├── wabt-unittests
+│   ├── wasm-interp
+│   ├── wasm-link
+│   ├── wasm-objdump
+│   ├── wasm-opcodecnt
+│   ├── wasm-validate
+│   ├── wasm2c
+│   ├── wasm2wat
+│   ├── wast2json
+│   ├── wat-desugar
+│   └── wat2wasm
+├── package.json
+├── public
+│   ├── app.wasm <--------- Web Assembly compiled binary file
+│   ├── index.html
+│   └── javascript
+│       ├── app.js
+│       └── fetch.js
+├── src
+│   └── app.wat <---------- Web Assembly text module file
+└── yarn.lock
+```
